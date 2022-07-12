@@ -1,0 +1,29 @@
+.low-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.a-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.a-link:hover {
+    text-decoration: none;
+    color: #929796;
+}
+
+.head-text-footer {
+    color: white;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #212121;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

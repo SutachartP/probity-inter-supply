@@ -1,0 +1,10 @@
+{
+    "CompanyName": "Probity Inter Supply",
+    "Navbar": {
+        "Home": "Home",
+        "AboutUs": "About Us",
+        "Project": "Project",
+        "Customer": "Customer",
+        "Contact": "Contact"
+    }
+}
