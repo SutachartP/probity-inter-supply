@@ -1,6 +1,54 @@
-footer {
-    background-color: #212121;
+header {
+    background-color: #06283D;
+    top: 0;
+    height: 5vh;
+    width: 100%;
+}
+
+navbar {
+    padding: 20px 10px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+navbar.navbar-active {
+    padding: 20px 10px;
+    background-color: white;
     position: fixed;
+    width: 100%;
+    opacity: 95%;
+    transition: 0.8s;
+}
+
+.nav-link,
+.navbar-brand {
+    font-size: 20px;
+    margin: 0px 10px;
+    color: white;
+}
+
+.nav-link-active,
+.nav-link:hover {
+    font-weight: bold;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer {
     bottom: 0;
     width: 100%;
+}
+
+footer>div.footer-contact {
+    background-color: #212121;
+}
+
+footer>div.footer-credit {
+    background-color: black;
 }

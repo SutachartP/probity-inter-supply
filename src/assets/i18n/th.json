@@ -3,8 +3,15 @@
     "Navbar": {
         "Home": "หน้าหลัก",
         "AboutUs": "เกี่ยวกับเรา",
+        "Service": "บริการ",
         "Project": "ผลงาน",
-        "Customer": "ลูกค้า",
+        "Client": "ลูกค้า",
         "Contact": "ติดต่อ"
+    },
+    "Hotline": "สายด่วน",
+    "Service": {
+        "Construction": "รับเหมาก่อสร้าง",
+        "System": "รับเหมางานระบบ",
+        "Telecommunication": "รับเหมางานโทรคมนาคม"
     }
 }

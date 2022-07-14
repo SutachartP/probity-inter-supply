@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 // Bootstrap 5
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-// Module Translate Language
+// Translate Language
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
@@ -13,19 +13,19 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './menu/home/home.component';
-import { AboutUsComponent } from './menu/about-us/about-us.component';
+import { ServiceComponent } from './menu/service/service.component';
 import { ProjectComponent } from './menu/project/project.component';
+import { ClientComponent } from './menu/client/client.component';
 import { ContactComponent } from './menu/contact/contact.component';
-import { FooterComponent } from './menu/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutUsComponent,
+    ServiceComponent,
     ProjectComponent,
-    ContactComponent,
-    FooterComponent
+    ClientComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

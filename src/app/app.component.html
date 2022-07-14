@@ -1,62 +1,132 @@
-<navbar class="navbar navbar-expand-sm navbar-light bg-light">
+<!-- <header>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-end mt-1">
+          <span class="text-light"> {{ "Hotline" | translate }} : 086-875-0608 / 063-767-6388 </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header> -->
+
+<navbar class="navbar navbar-expand-md" [ngClass]="{ 'navbar-active' : navbarActive }">
   <div class="container">
-    <a class="navbar-brand" routerLink="">{{ "CompanyName" | translate }}</a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+    <a class="navbar-brand" routerLink="/">{{ "CompanyName" | translate
+      }}</a>
+    <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+      aria-controls="navbarMenu" aria-expanded="false">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarMenu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <a class="nav-link" routerLink="/" routerLinkActive="nav-link-active"
+            [routerLinkActiveOptions]="{ exact: true }">
             <span>{{ "Navbar.Home" | translate }}</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="aboutus" routerLinkActive="active">
-            <span>{{ "Navbar.AboutUs" | translate }}</span>
+          <a class="nav-link" routerLink="service" routerLinkActive="nav-link-active">
+            <span>{{ "Navbar.Service" | translate }}</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="project" routerLinkActive="active">
+          <a class="nav-link" routerLink="project" routerLinkActive="nav-link-active">
             <span>{{ "Navbar.Project" | translate }}</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="customer" routerLinkActive="active">
-            <span>{{ "Navbar.Customer" | translate }}</span>
+          <a class="nav-link" routerLink="client" routerLinkActive="nav-link-active">
+            <span>{{ "Navbar.Client" | translate }}</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="contact" routerLinkActive="active">
+          <a class="nav-link" routerLink="contact" routerLinkActive="nav-link-active">
             <span>{{ "Navbar.Contact" | translate }}</span>
           </a>
         </li>
-        <li class="nav-item">
-          <select class="form-control" #selectedLang (change)="switchLang(selectedLang.value)">
+        <!-- <li class="nav-item">
+          <select class="form-select" #selectedLang (change)="switchLang(selectedLang.value)">
             <option *ngFor="let language of translate.getLangs()" [value]="language"
               [selected]="language === translate.currentLang">
               {{ language }}
             </option>
           </select>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" (click)="switchLang('th')">
+            <img src="../assets/image/country/thai.png" width="25">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="switchLang('en')">
+            <img src="../assets/image/country/usa.png" width="25">
+          </a>
         </li>
       </ul>
     </div>
   </div>
 </navbar>
 
-<div class="container">
-  <router-outlet></router-outlet>
-</div>
+<router-outlet></router-outlet>
 
 <footer>
-  <div class="row">
-    <div class="col-12">
-      <div class="text-center p-3">
-        <span class="text-light">
-          <span> Copyright </span>
-          <span class="text-light"> ©ProbityInterSupply.com </span>
-          <span> All Rights Reserved. </span>
-        </span>
+  <div class="footer-contact">
+    <div class="container p-5">
+      <div class="row justify-content-center text-light">
+        <div class="col-4 col-md-3 col-lg-3">
+          <div>
+            <a class="footer-link" routerLink="/"> {{ "Navbar.Home" | translate }} </a>
+          </div>
+          <div>
+            <a class="footer-link" routerLink="../service"> {{ "Navbar.Service" | translate }} </a>
+          </div>
+          <div>
+            <a class="footer-link" routerLink="../project"> {{ "Navbar.Project" | translate }} </a>
+          </div>
+          <div>
+            <a class="footer-link" routerLink="../client"> {{ "Navbar.Client" | translate }} </a>
+          </div>
+          <div>
+            <a class="footer-link" routerLink="../contact"> {{ "Navbar.Contact" | translate }} </a>
+          </div>
+        </div>
+        <div class="col-7 col-md-3 col-lg-3">
+          <p class="font-weight-bold">บริการของเรา</p>
+          <li>รับเหมาก่อสร้าง</li>
+          <li>รับเหมางานระบบ</li>
+          <li>รับติดตั้งโทรคมนาคม</li>
+          <li>รับบริหารโครงการ</li>
+        </div>
+        <div class="col-11 col-md-3 col-lg-3">
+          <p class="font-weight-bold">เกี่ยวกับเรา</p>
+          <p>
+            ที่อยู่ : เลขที่ 99/174 หมู่บ้าน ปริญญดา ถ.คลองขุด ต.บางพลีใหญ่
+            อ.บางพลี จ.สมุทรปราการ 10540
+          </p>
+        </div>
+        <div class="col-11 col-md-3 col-lg-3">
+          <p class="font-weight-bold">ติดต่อเรา</p>
+          <li>Tel: (+66) 086-875-0608</li>
+          <li>Email: Probity@hotmail.com</li>
+          <li>Facebook</li>
+          <li>Line</li>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-credit">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center p-3">
+            <span class="text-light">
+              <span> © Copyright 2022 </span>
+              <span class="text-light"> ProbityInterSupply.com </span>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   </div>

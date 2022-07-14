@@ -3,8 +3,15 @@
     "Navbar": {
         "Home": "Home",
         "AboutUs": "About Us",
+        "Service": "Service",
         "Project": "Project",
-        "Customer": "Customer",
+        "Client": "Client",
         "Contact": "Contact"
+    },
+    "Hotline": "Hotline",
+    "Service": {
+        "Construction": "Construction Contractor",
+        "System": "System Contractor",
+        "Telecommunication": "Telecommunication Contractor"
     }
 }
