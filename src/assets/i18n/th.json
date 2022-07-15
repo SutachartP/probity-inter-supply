@@ -1,5 +1,6 @@
 {
     "CompanyName": "Probity Inter Supply",
+    "CompanyShortName": "PIS Part.,Ltd.",
     "Navbar": {
         "Home": "หน้าหลัก",
         "AboutUs": "เกี่ยวกับเรา",
@@ -13,5 +14,25 @@
         "Construction": "รับเหมาก่อสร้าง",
         "System": "รับเหมางานระบบ",
         "Telecommunication": "รับเหมางานโทรคมนาคม"
+    },
+    "HeadingName": {
+        "AboutUs": "เกี่ยวกับเรา",
+        "Service": "บริการของเรา",
+        "Project": "ผลงานของเรา",
+        "Client": "ลูกค้าของเรา",
+        "Contact": "ติดต่อเรา"
+    },
+    "ContactForm": {
+        "FullName": "ชื่อ-นามสกุล",
+        "PlaceholderFullName": "ระบุชื่อ-นามสกุล",
+        "Business": "ธุรกิจ",
+        "PlaceholderBusiness": "ระบุธุรกิจของท่าน",
+        "PhoneNumber": "เบอร์โทรศัพท์",
+        "PlaceholderPhoneNumber": "ระบุเบอร์โทรศัพท์",
+        "Email": "อีเมล",
+        "PlaceholderEmail": "ระบุอีเมล",
+        "Description": "รายละเอียด",
+        "PlaceholderDescription": "ระบุข้อมูลเกี่ยวกับรายละเอียดของโปรเจค",
+        "ButtonConfirm": "ส่งข้อความ"
     }
 }

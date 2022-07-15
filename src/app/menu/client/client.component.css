@@ -1,3 +1,9 @@
 #client {
-    min-height: 100vh;
+    min-height: 50vh;
+    background: url("../../../assets/image/wallpaper/client.jpg") no-repeat top center fixed;
+    /* background-color: grey; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
