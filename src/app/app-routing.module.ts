@@ -9,22 +9,11 @@ import { ClientComponent } from './menu/client/client.component';
 import { ContactComponent } from './menu/contact/contact.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: HomeComponent
-  }, {
-    path: 'service',
-    component: ServiceComponent
-  }, {
-    path: 'project',
-    component: ProjectComponent
-  }, {
-    path: 'client',
-    component: ClientComponent
-  }, {
-    path: 'contact',
-    component: ContactComponent
-  }
+  { path: '', component: HomeComponent },
+  { path: 'service', component: ServiceComponent },
+  { path: 'project', component: ProjectComponent },
+  { path: 'client', component: ClientComponent },
+  { path: 'contact', component: ContactComponent }
 ];
 
 @NgModule({

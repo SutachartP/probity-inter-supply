@@ -1,15 +1,52 @@
-<div class="container-fluid" id="header">
-    <div class="row align-items-center text-center justify-content-center" style="min-height: 100vh;">
-        <div class="col">
-            <h1 class="text-uppercase fw-bold text-light">{{ "CompanyName" | translate }}</h1>
-            <span class="sub-text d-block text-light">
-                {{ "Service.Construction" | translate }} / {{ "Service.System" | translate }} / {{
-                "Service.Telecommunication" | translate }}
-            </span>
+<div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+            <img src="../../../assets/image/wallpaper/housenew.jpg" class="d-block w-100">
+            <div class="carousel-content text-center">
+                <h1 class="text-uppercase fw-bolder text-light header-center">{{ "CompanyName" | translate }}</h1>
+                <span class="sub-text d-block text-light">
+                    {{ "Service.Construction" | translate }} / {{ "Service.System" | translate }} /
+                    {{ "Service.Telecommunication" | translate }}
+                </span>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+            <img src="../../../assets/image/wallpaper/housenew.jpg" class="d-block w-100">
+            <div class="carousel-content text-center">
+                <h1 class="text-uppercase fw-bolder text-light">{{ "CompanyName" | translate }}</h1>
+                <span class="sub-text d-block text-light">
+                    {{ "Service.Construction" | translate }} / {{ "Service.System" | translate }} /
+                    {{ "Service.Telecommunication" | translate }}
+                </span>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+            <img src="../../../assets/image/wallpaper/housenew.jpg" class="d-block w-100">
+            <div class="carousel-content text-center">
+                <h1 class="text-uppercase fw-bolder text-light">{{ "CompanyName" | translate }}</h1>
+                <span class="sub-text d-block text-light">
+                    {{ "Service.Construction" | translate }} / {{ "Service.System" | translate }} /
+                    {{ "Service.Telecommunication" | translate }}
+                </span>
+            </div>
         </div>
     </div>
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#home-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
 </div>
 
-<div id="content">
-
+<div class="container" style="min-height: 30vh;">
+    test
 </div>

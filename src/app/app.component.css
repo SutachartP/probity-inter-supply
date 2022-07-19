@@ -23,6 +23,7 @@ navbar.navbar-active {
     transition: 0.8s;
 }
 
+
 .nav-link,
 .navbar-brand {
     font-size: 20px;
@@ -52,4 +53,20 @@ footer>div.footer-contact {
 
 footer>div.footer-credit {
     background-color: black;
+}
+
+@media (max-width: 768px) {
+    navbar {
+        position: static;
+        background-color: white;
+    }
+
+    navbar.navbar-active {
+        position: static;
+    }
+
+    .nav-link,
+    .navbar-brand {
+        color: black;
+    }
 }

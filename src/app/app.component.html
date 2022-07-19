@@ -12,8 +12,7 @@
 
 <navbar class="navbar navbar-expand-md" [ngClass]="{ 'navbar-active' : navbarActive }">
   <div class="container">
-    <a class="navbar-brand" routerLink="/">{{ "CompanyName" | translate
-      }}</a>
+    <a class="navbar-brand text-uppercase fw-bold" routerLink="/">{{ "CompanyName" | translate }}</a>
     <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
       aria-controls="navbarMenu" aria-expanded="false">
       <span class="navbar-toggler-icon"></span>
@@ -46,14 +45,6 @@
             <span>{{ "Navbar.Contact" | translate }}</span>
           </a>
         </li>
-        <!-- <li class="nav-item">
-          <select class="form-select" #selectedLang (change)="switchLang(selectedLang.value)">
-            <option *ngFor="let language of translate.getLangs()" [value]="language"
-              [selected]="language === translate.currentLang">
-              {{ language }}
-            </option>
-          </select>
-        </li> -->
         <li class="nav-item">
           <a class="nav-link" (click)="switchLang('th')">
             <img src="../assets/image/country/thai.png" width="25">
